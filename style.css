@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f0f8; /* Fondo gris claro con matiz púrpura */
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.textarea-container {
+    flex: 2;
+    padding: 40px;
+    background-color: #eae6f5; /* Fondo morado claro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textarea-container h1 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 24px;
+    color: #3d0a6b; /* Púrpura oscuro */
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #d1c6e6; /* Borde morado claro */
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: none;
+    background-color: #ffffff; /* Fondo blanco para el textarea */
+}
+
+.info-text {
+    font-size: 12px;
+    color: #6b3d8b; /* Púrpura grisáceo */
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.encrypt-btn {
+    background-color: #6c3d8b; /* Púrpura oscuro */
+    color: #ffffff;
+}
+
+.decrypt-btn {
+    background-color: #d8b4dd; /* Púrpura claro */
+    color: #6c3d8b; /* Púrpura oscuro */
+}
+
+.encrypt-btn:hover {
+    background-color: #5b2a72; /* Púrpura más oscuro */
+}
+
+.decrypt-btn:hover {
+    background-color: #c084c0; /* Púrpura más claro */
+}
+
+.image-container {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-left: 1px solid #e5e7eb; /* Borde gris claro */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container p {
+    font-size: 16px;
+    color: #3d0a6b; /* Púrpura oscuro */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+    .image-container {
+        border-left: none;
+        border-top: 1px solid #e5e7eb;
+    }
+    .textarea-container {
+        padding: 20px;
+    }
+    textarea {
+        height: 150px;
+    }
+    button {
+        font-size: 14px;
+    }
+}
